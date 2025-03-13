@@ -7,45 +7,30 @@ namespace Testovoe
     {
         [SerializeField] 
         private Transform _characterTransform;
-        [SerializeField]
+
         private CharacterController _characterController;
-        
-        private float _moveSpeed;
-        private float _currentAttractionCharacter;
-        private float _gravityForce;
+        private IMovementController _movementController;
 
         [Inject]
-        public void Construct(CharacterConfig config)
+        public void Construct(CharacterController characterController, CharacterConfig config)
         {
-            _moveSpeed = config.MoveSpeed;
-            _gravityForce = config.GravityForce;
+            _characterController = characterController;
+            
+            _movementController = new CharacterMovementLogic(
+                _characterTransform,
+                _characterController,
+                config
+            );
         }
 
         private void Update()
         {
-            GravityHandling();
+            _movementController.UpdateGravity();
         }
 
         public void MoveCharacter(Vector3 moveDirection)
         {
-            moveDirection = _characterTransform.TransformDirection(moveDirection);
-            
-            moveDirection = moveDirection * _moveSpeed;
-            moveDirection.y = _currentAttractionCharacter;
-            
-            _characterController.Move(moveDirection * Time.deltaTime);
-        }
-
-        private void GravityHandling()
-        {
-            if (!_characterController.isGrounded)
-            {
-                _currentAttractionCharacter -= _gravityForce * Time.deltaTime;
-            }
-            else
-            {
-                _currentAttractionCharacter = 0;
-            }
+            _movementController.Move(moveDirection);
         }
     }
 }

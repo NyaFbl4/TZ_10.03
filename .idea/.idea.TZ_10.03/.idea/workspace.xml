@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e916f192-9aae-4b04-a7c2-83eccce1e06c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Testovoe_AA/Assets/Plugins/Zenject/Source/Main/DiContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Testovoe_AA/Assets/Plugins/Zenject/Source/Runtime/Kernels/MonoKernel.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Joystick/JoystickForMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Installers/SystemInstallers.cs" />
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Installers/SystemInstaller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Systems/ButtonsControllerSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Character/IMovementController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Character/CharacterMovementLogic.cs" />
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Character/IPickupItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Character/PickupItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Systems/InputSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Character/CharacterMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Testovoe/Scripts/Installers/CharacterInstaller.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="2uGazeYYOlpErdURo1aBDuYlpkp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
@@ -19,5 +56,14 @@
       </option>
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

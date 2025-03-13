@@ -11,6 +11,9 @@ namespace Testovoe
         [SerializeField] private JoystickForMovement _joystick;
         [SerializeField] private FixedTouchField _touchField;
         
+        [SerializeField] private Transform _characterTransform;
+        [SerializeField] private CharacterController _characterController;
+        
         public override void InstallBindings()
         {
             CharacterBingings();
@@ -19,9 +22,19 @@ namespace Testovoe
         private void CharacterBingings()
         {
             Container
+                .Bind<CharacterController>()
+                .FromInstance(_characterController)
+                .AsSingle();
+            
+            Container
                 .Bind<CharacterMovement>()
                 .FromInstance(_characterMovement)
                 .AsSingle();
+
+            Container
+                .BindInterfacesTo<IMovementController>()
+                .AsSingle()
+                .WithArguments(_characterTransform);
             
             Container
                 .Bind<CameraController>()

@@ -1170,17 +1170,21 @@
             </e>
             <e p="Character" t="Include">
               <e p="CharacterMovement.cs" t="Include" />
+              <e p="CharacterMovementLogic.cs" t="Include" />
+              <e p="IMovementController.cs" t="Include" />
               <e p="PickupItem.cs" t="Include" />
             </e>
             <e p="Installers" t="Include">
               <e p="CharacterInstaller.cs" t="Include" />
               <e p="CharacterSettingsInstaller.cs" t="Include" />
+              <e p="SystemInstaller.cs" t="Include" />
             </e>
             <e p="Joystick" t="Include">
               <e p="JoystickForMovement.cs" t="Include" />
               <e p="JoystickHandler.cs" t="Include" />
             </e>
             <e p="Systems" t="Include">
+              <e p="ButtonsControllerSystem.cs" t="Include" />
               <e p="InputSystem.cs" t="Include" />
             </e>
           </e>

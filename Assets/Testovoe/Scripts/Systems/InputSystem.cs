@@ -4,17 +4,16 @@ using Zenject;
 
 namespace Testovoe
 {
-    public class InputSystem : MonoBehaviour
+    public class InputSystem : ITickable
     {
-        private CharacterMovement _characterMovement;
-        private CameraController _cameraController;
-        private PickupItem _pickupItem;
+        private readonly CharacterMovement _characterMovement;
+        private readonly CameraController _cameraController;
+        private readonly PickupItem _pickupItem;
         
-        private JoystickForMovement _joystickForMovement;
-        private FixedTouchField _fixedTouchField;
+        private readonly JoystickForMovement _joystickForMovement;
+        private readonly FixedTouchField _fixedTouchField;
 
-        [Inject]
-        public void Construct(CharacterMovement characterMovement, CameraController cameraController,
+        public InputSystem(CharacterMovement characterMovement, CameraController cameraController,
                     PickupItem pickupItem, JoystickForMovement joystick, FixedTouchField touchField)
         {
             _characterMovement = characterMovement;
@@ -25,7 +24,7 @@ namespace Testovoe
             _fixedTouchField = touchField;
         }
         
-        private void Update()
+        public void Tick()
         {
             MoveCharacter();
             RotationCharacter();
@@ -55,11 +54,6 @@ namespace Testovoe
         private void RotationCharacter()
         {
             _cameraController.LockAxis = _fixedTouchField.TouchDist;
-        }
-        
-        public void DropItem()
-        {
-            _pickupItem.DropItem();
         }
     }
 }
